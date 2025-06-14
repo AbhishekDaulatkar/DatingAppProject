@@ -37,7 +37,7 @@ login(){
   this.accountService.login(this.model).subscribe({ //object "model" will be send as JSON to api
     next : _ => this.router.navigateByUrl('/members'),
       //this.loggedIn = true;
-    error : error => this.toastr.error(error.error)
+    //error : error => this.toastr.error(error.error)
   })
 }
 logout(){
